@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admission Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script1.js" defer></script>
+    </head>
+    <body>
+
+        <h1>XYZ College</h1>
+        <h3>Admission Form</h3>
+        <button id="toggleRainbow">Rainbow</button><button id="darkModeToggle">Dark Mode</button><hr>
+         
+        <div id="ack"></div>
+        <form id="myForm">
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" maxLength=30 placeholder="Enter your name" id="name" name="Student-name"> 
+                    </td>
+                    <td>
+                        <p class="wordCount"></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age">Age:</label>
+                    </td>
+                    <td>
+                        <input type="number" placeholder="Enter your age" id="age" name="age">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" placeholder="Enter Email" id="email" name="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Gender:</label>
+                    </td>
+                    <td class ="gender">
+                        <label><input type="radio" name="gender" value="Male">Male</label>
+                        <label><input type="radio" name="gender" value="Female">Female</label>
+                        <label><input type="radio" name="gender" value="Other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Hobbies:</label>
+                    </td>
+                    <td>
+                        <label><input type="checkbox" name="hobby" value="Reading">Reading</label>
+                        <label><input type="checkbox" name="hobby" value="Coding">Coding</label>
+                        <label><input type="checkbox" name="hobby" value="Sports">Sports</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="branch">Branch:</label>
+                    </td>
+                    <td>
+                        <select id="branch">
+                            <option value="">Select your branch</option>
+                            <option value="AI & ML">AI & ML</option>
+                            <option value="CSE">CSE</option>
+                            <option value="Data Science">Data Science</option>
+                            <option value="Cyber Security">Cyber Security</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address:</label>
+                    </td>
+                    <td>
+                        <textarea rows="2" cols="30" id="address" name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="feedback">Feedback:</label>
+                    </td>
+                    <td>
+                        <input id="feedback" placeholder="Please provide your feedback" name="feedback">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            
+            <button type="reset">RESET</button> <button type="submit"><p id="submitText">SUBMIT</p></button>
+        </form>
+        
+        <p id="para"></p>
+        <p id="fun"></p>
+        </body>
+</html>
